@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li <% if (page_name==='main') { %> class="active" <% } %> > <a href="/">Home</a> </li>
+    <li <% if(page_name==='users') { %> class="active" <% } %> ><a href="/users">Users</a></li>
+    <li <% if(page_name==='jobs') { %> class="active" <% } %>><a href="/jobs">Jobs</a></li>
+    <li <% if(page_name==='gallery') { %> class="active" <% } %>><a href="/gallery">Gallery</a></li>
+    <li <% if(page_name==='contact') { %> class="active" <% } %>><a href="/contact">Contacts</a></li>
+    <li <% if(page_name==='posts') { %> class="active" <% } %>><a href="/posts">Posts</a></li>
+  </ul>
+</nav>

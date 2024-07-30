@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Postlar</h1>
+    <ol>
+      <% posts.forEach((post) => { %>
+      <li>
+        <a href="/post/<%= post.id %>">
+          <%= post.title %>
+        </a>
+      </li>
+      <% }) %>
+    </ol>
+    <h3><a href="/add-post" class="add_post">Yangi post qo`shish</a></h3>
+  </body>
+</html>

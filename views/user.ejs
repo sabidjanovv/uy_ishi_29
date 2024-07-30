@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+  <h1><%=user.name %></h1>
+  <p class="user_info">User name: <%= user.username %></p>
+  <p class="user_info">Email: <%= user.email %></p>
+  <p class="user_info">Phone: <%= user.phone %></p>
+  <p class="user_info">Website: <%= user.website %></p>
+  </body>
+</html>
